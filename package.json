@@ -1,0 +1,26 @@
+{
+  "name": "node-express-static-web-server",
+  "version": "1.0.0",
+  "description": "Node Express Static Web Server",
+  "scripts": {
+    "start": "node web-server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PAI-ULL/pai-practica09-graficos-mandelbrot-Adrian-alu0101024363.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "canvas": "^2.7.0",
+    "chai": "^4.3.3",
+    "eslint": "^7.25.0",
+    "eslint-config-google": "^0.14.0",
+    "jsdom": "^16.5.3",
+    "mocha": "^8.3.1",
+    "nyc": "^15.1.0"
+  }
+}
