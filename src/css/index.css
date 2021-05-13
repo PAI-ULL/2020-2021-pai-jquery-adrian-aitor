@@ -4,4 +4,30 @@ header {
 body {
   background-color: rgb(70, 57, 57);
 }
-
+#img {
+  height: 20%;
+  width: 30%;
+}
+#test {
+  padding: 15px 25px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: wheat;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+#test:hover {
+  background-color: bisque;
+}
+#test:active {
+  background-color: bisque;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#text {
+  color: white;
+}
