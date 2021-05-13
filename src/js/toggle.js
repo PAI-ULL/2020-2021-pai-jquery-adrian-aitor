@@ -11,6 +11,7 @@
 
 export class Toggle {
 
+  /** Calls the listen method to start listening to events */
   constructor() {
     this.#listen();
   }

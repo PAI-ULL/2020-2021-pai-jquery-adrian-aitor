@@ -10,6 +10,7 @@
   border: none;
   border-radius: 10px;
   box-shadow: 0 9px #999;
+  margin: 1%;
 }
 
 #vanilla:hover,#jquery:hover {
@@ -28,3 +29,18 @@
   height: 70%;
   width: 60%;
 }
+
+.show {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+#alternative {
+  margin: 1%;
+}
+
+
