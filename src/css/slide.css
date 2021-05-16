@@ -1,0 +1,58 @@
+#vanilla, #jquery {
+    padding: 10px 25px;
+    margin-top: 1%;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: wheat;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #vanilla:hover,#jquery:hover {
+    background-color: bisque;
+  }
+  
+  #vanilla:active,#jquery:active {
+    background-color: bisque;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  #text {
+    color: white;
+  }
+  #img {
+    height: 70%;
+    width: 60%;
+  }
+
+  #content {
+    background-color: wheat;
+    text-align: center;
+    margin-top: 25px;
+    height: 60px;
+    width: 86px;
+    position:absolute;
+    display: none;
+  }
+
+  #alternative {
+    background-color: wheat;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 90px;
+    width: 86px;
+    height: 0px;
+    position: absolute;
+    overflow-y: hidden;
+    transition: 0.5s;
+    float: right;
+  }
+
+  #text {
+    color: black;
+    text-align: center;
+  }
