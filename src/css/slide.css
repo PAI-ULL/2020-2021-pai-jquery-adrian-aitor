@@ -32,9 +32,9 @@
   #content {
     background-color: wheat;
     text-align: center;
-    margin-top: 25px;
-    height: 60px;
-    width: 86px;
+    margin: 25px;
+    height: 400px;
+    width: 400px;
     position:absolute;
     display: none;
   }
@@ -42,17 +42,26 @@
   #alternative {
     background-color: wheat;
     text-align: center;
-    margin-top: 25px;
-    margin-left: 90px;
-    width: 86px;
+    margin: 25px;
+    width: 400px;
     height: 0px;
     position: absolute;
     overflow-y: hidden;
-    transition: 0.5s;
+    transition: 0.9s;
     float: right;
   }
 
   #text {
     color: black;
     text-align: center;
+    font-size: 25px;
+  }
+
+  #container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #left, #right {
+    margin-top: 25px;
   }

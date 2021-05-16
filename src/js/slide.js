@@ -32,7 +32,7 @@ export class Slide {
   #slideDiv() {
     const slided = document.getElementById('alternative').offsetHeight;
     if(slided === 0) {
-      document.getElementById('alternative').style.height = '60px';
+      document.getElementById('alternative').style.height = '400px';
     } else {  
       document.getElementById('alternative').style.height = '0px';
     }
