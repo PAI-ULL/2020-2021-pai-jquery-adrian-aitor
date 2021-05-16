@@ -32,7 +32,7 @@
   #content {
     background-color: wheat;
     text-align: center;
-    margin: 25px;
+    margin-top: 25px;
     height: 400px;
     width: 400px;
     position:absolute;
@@ -42,7 +42,7 @@
   #alternative {
     background-color: wheat;
     text-align: center;
-    margin: 25px;
+    margin-top: 25px;
     width: 400px;
     height: 0px;
     position: absolute;
@@ -59,9 +59,12 @@
 
   #container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   #left, #right {
     margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 100px;
+    margin-right: 400px;
   }
