@@ -33,3 +33,59 @@ li a {
 li a:hover {
   background-color: #111111;
 }
+
+#before {
+  height: 60%;
+  width: 50%;
+}
+#after {
+  height: 40%;
+  width: 50%;
+  display: none;
+}
+#reset {
+  padding: 10px 25px;
+  margin-top: 1%;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: wheat;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+  margin: 1%;
+}
+
+#reset:hover {
+  background-color: bisque;
+}
+
+#reset:active {
+  background-color: bisque;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+div.box {
+  display: flex;
+}
+
+#images {
+  width: 50vw;
+}
+#imag {
+  width: 60%;
+  padding-left: 20%;
+}
+
+#shake {
+  width: 50vw;
+}
+
+#before, #after {
+  width: 80%;
+  margin-left: 1%;
+  height: 90%;
+}
