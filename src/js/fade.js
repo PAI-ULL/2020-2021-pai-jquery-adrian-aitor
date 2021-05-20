@@ -11,6 +11,7 @@
 
 export class Fade {
 
+  #jquery = $('#jquery')
   /** Calls the listen method to start listening to events */
   constructor() {
     this.#listen();
@@ -18,17 +19,17 @@ export class Fade {
 
   /** Jquery way to fade toggle an image and change button text */
   #jqueryFade() {
-    $("#jquery").on('click', () => {
-      $('#alternative').fadeToggle();
-      if ($('#jquery').text() === 'Jquery fade in') {
-        $('#jquery').text('Jquery fade out');
+    this.#jquery.on('click', () => {
+      $('#alternative').fadeToggle(600);
+      if (this.#jquery.text() === 'Jquery fade in') {
+        this.#jquery.text('Jquery fade out');
       } else {
-        $('#jquery').text('Jquery fade in');
+        this.#jquery.text('Jquery fade in');
       }
     });
   }
 
-  /** Vanilla way the using css fade in an element
+  /** Vanilla way that using css fade in an element
    * @param {Object} element
    */
   #fadeIn(element){

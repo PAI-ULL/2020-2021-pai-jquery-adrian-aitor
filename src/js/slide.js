@@ -18,17 +18,14 @@ export class Slide {
     this.#listen();
   }
 
-  /**
-   * jquerySlide
-   * @description 
-   */
+  /** Jquery way to slide an element */
   #jquerySlideDiv() {
     $('#jquery').on('click', function() {
       $('#content').slideToggle('slow');
     });
   }
 
-  /** Vanilla javascript way to toggle between divs */
+  /** Vanilla javascript way to slide an element */
   #slideDiv() {
     const slided = document.getElementById('alternative').offsetHeight;
     if(slided === 0) {

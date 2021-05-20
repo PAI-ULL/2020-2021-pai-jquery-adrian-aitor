@@ -18,9 +18,9 @@ export class Toggle {
 
   /** Jquery way to toggle between divs */
   #jqueryToggleDiv() {
-    $("#jquery").on("click", function() {
-      $("#content").toggle();
-      $("#alternative").toggle();
+    $('#jquery').on('click', function() {
+      $('#content').toggle();
+      $('#alternative').toggle();
     });
   }
 
