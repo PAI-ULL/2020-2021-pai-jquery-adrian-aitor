@@ -1,11 +1,12 @@
 #img {
     width: 600px;
-    height: 500px;
+    height: 50%;
+    padding-top: 15%;
 }
 
 #fancyBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 50%;
 }
