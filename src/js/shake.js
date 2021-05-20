@@ -10,6 +10,9 @@
 
 export class Shake {
 
+  #before = $('#before');
+  #after = $('#after');
+  #img = $('#imag');
   /** Calls the method that listen to events and do the actions */
   constructor() {
     this.#shake();
@@ -19,30 +22,30 @@ export class Shake {
    * If the after is clicked apply a pulsate effect
    */
   #shake() {
-    $('#before').on('click', () => {
-      $('#before').effect('shake', 'left', () => {
-        $('#before').hide();
-        $('#after').show();
+    this.#before.on('click', () => {
+     this.#before.effect('shake', 'left', () => {
+        this.#before.hide();
+        this.#after.show();
       });
     });
-    $('#after').on('click', () => {
-      $('#after').effect('pulsate', 4);
+    this.#after.on('click', () => {
+      this.#after.effect('pulsate', 4);
     });
     $('#reset').on('mousedown', () => {
-      $('#after').hide();
-      $('#before').show();
+      this.#after.hide();
+     this.#before.show();
     });
   }
   
   /** On mouseover an image it switch to another one  */
   #over() {
     let imageNumber = 3;
-    $('#imag').on('mouseover', () => {
-      $('#imag').toggle('drop');
+    this.#img.on('mouseover', () => {
+      this.#img.toggle('drop');
       let imageString = '../img/japan' + imageNumber + '.jpg';
       imageNumber = imageNumber < 6 ? imageNumber : 2;
         imageNumber++;
-        $('#imag').attr('src', imageString).toggle('drop');
+        this.#img.attr('src', imageString).toggle('drop');
     });
   }
 }
