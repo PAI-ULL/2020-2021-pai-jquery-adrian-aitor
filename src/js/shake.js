@@ -41,7 +41,6 @@ export class Shake {
       $('#imag').toggle('drop');
       let imageString = '../img/japan' + imageNumber + '.jpg';
       imageNumber = imageNumber < 6 ? imageNumber : 2;
-        //$('#images').append('<img src="imageString" id="imag">');
         imageNumber++;
         $('#imag').attr('src', imageString).toggle('drop');
     });
