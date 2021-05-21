@@ -1,11 +1,10 @@
 /**
   @author  Adrian Fleitas
   @author Aitor Hernández Sánchez
-  @since  28.April.2021
+  @since  21.May.2021
   @desc Toggle class that show the vanilla and jquery way to toggle between html divs
   @link https://github.com/PAI-ULL/2020-2021-pai-jquery-adrian-aitor.git
 */
-
 
 'use strict';
 
@@ -31,7 +30,7 @@ export class Toggle {
     document.getElementById('alternative').style.display = 'block';
     } else {  
     document.getElementById('alternative').style.display = 'none';
-    document.getElementById('content').style.display = 'block'
+    document.getElementById('content').style.display = 'block';
     }
   } 
 

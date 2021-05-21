@@ -1,17 +1,20 @@
 /**
   @author  Adrian Fleitas
   @author Aitor Hernández Sánchez
-  @since  28.April.2021
+  @since  21.May.2021
   @desc Fade class that show the vanilla and jquery way to fade toggle an element
   @link https://github.com/PAI-ULL/2020-2021-pai-jquery-adrian-aitor.git
 */
-
 
 'use strict';
 
 export class Fade {
 
+  /** 
+   * @property {Object} jquery an html button element with the jquery id 
+   * */
   #jquery = $('#jquery')
+
   /** Calls the listen method to start listening to events */
   constructor() {
     this.#listen();

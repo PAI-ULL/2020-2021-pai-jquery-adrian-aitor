@@ -5,8 +5,7 @@ const APP = EXPRESS();
 // set the port
 APP.set('port', 8080);
 
-// tell express that we want to use the www folder
-// for our static assets
+// Setting the needed paths to the src folder and the jquery dist folder
 APP.use('/', EXPRESS.static(PATH.join(__dirname, './')));
 APP.use(EXPRESS.static(PATH.join(__dirname, '../src')));
 APP.use('/jquery', EXPRESS.static(PATH.join(__dirname, '../node_modules/jquery/dist/')));

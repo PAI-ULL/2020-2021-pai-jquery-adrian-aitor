@@ -1,8 +1,9 @@
 /**
   @author  Adrian Fleitas
   @author Aitor Hernández Sánchez
-  @since  28.April.2021
-  @desc Fade class that show the vanilla and jquery way to fade toggle an element
+  @since  21.May.2021
+  @desc Shake class that after the image is clicked it switched to another image and if
+  that second image is clicked it pulsate 4 times
   @link https://github.com/PAI-ULL/2020-2021-pai-jquery-adrian-aitor.git
 */
 
@@ -10,6 +11,11 @@
 
 export class Shake {
 
+  /**
+   * @property {Object} before the image shown before the shake effect
+   * @property {Object} after the image shown after the shake effect
+   * @property {Object} img the image that will be switched on mouse over
+   */
   #before = $('#before');
   #after = $('#after');
   #img = $('#imag');
@@ -18,6 +24,7 @@ export class Shake {
     this.#shake();
     this.#over();
   }
+
   /** First shake the image then replace it with the after version
    * If the after is clicked apply a pulsate effect
    */
@@ -49,4 +56,5 @@ export class Shake {
     });
   }
 }
+
 let shake = new Shake();
