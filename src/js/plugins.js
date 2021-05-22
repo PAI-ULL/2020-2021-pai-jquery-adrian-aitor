@@ -12,3 +12,8 @@
  * Instantiation of an accordion plugin with the jQuery UI plugin
  */
 $('#accordion').accordion();
+
+/**
+ * Instantiation of a datepicker attached to an input, with the jQuery UI plugin
+ */
+ $('#datepicker').datepicker();
