@@ -1,0 +1,25 @@
+div {
+  margin-top: 5%;
+}
+#container {
+  float: right;
+  padding-right: 35%;
+  margin-top: 1%;
+}
+canvas {
+  padding-left: 1%;
+  margin-top: 1%;
+}
+#game {
+  float: right;
+  padding-right: 37%;
+  margin: 1%;
+  font-size: large;
+}
+#moves {
+  padding-right: 35.5%;
+  padding-top: 10%;
+  margin: 1%;
+  font-size: large;
+  float: right;
+}
