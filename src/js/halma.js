@@ -211,8 +211,8 @@ export class Halma {
   halmaOnClick(event) {
     let cell = this.#getCursorPosition(event);
     for (let i = 0; i < this.#gNumPieces; i++) {
-        if ((this.#gPieces[i].getrow() == cell.getrow()) &&
-            (this.#gPieces[i].getcolumn() == cell.getcolumn())) {
+        if ((this.#gPieces[i].getrow() === cell.getrow()) &&
+            (this.#gPieces[i].getcolumn() === cell.getcolumn())) {
             this.#clickOnPiece(i);
             return;
         }

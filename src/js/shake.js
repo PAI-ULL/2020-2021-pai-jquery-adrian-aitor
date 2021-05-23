@@ -36,11 +36,11 @@ export class Shake {
       });
     });
     this.#after.on('click', () => {
-      this.#after.effect('pulsate', 4);
+      this.#after.effect('pulsate');
     });
     $('#reset').on('mousedown', () => {
       this.#after.hide();
-     this.#before.show();
+      this.#before.show();
     });
   }
   

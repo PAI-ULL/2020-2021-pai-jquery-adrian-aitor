@@ -24,11 +24,6 @@ export class Fade {
   #jqueryFade() {
     this.#jquery.on('click', () => {
       $('#alternative').fadeToggle(600);
-      if (this.#jquery.text() === 'Jquery fade in') {
-        this.#jquery.text('Jquery fade out');
-      } else {
-        this.#jquery.text('Jquery fade in');
-      }
     });
   }
 
@@ -55,10 +50,8 @@ export class Fade {
     btn.addEventListener('click', () => {
       if (img.className.indexOf('hide') !== -1) {
         this.#fadeIn(img);
-        btn.innerHTML = 'Vanilla fade out';
       } else {
         this.#fadeOut(img);
-        btn.innerHTML = 'Vanilla fade in';
       }
     });
   }
